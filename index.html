@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de compras</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sistema de compras</h1>
+    </header>
+    <main class="main">
+        <form class="main__formulario">
+            <span>
+                <label for="Name">Nombre del producto</label>
+                <input type="text" name="Name" placeholder="Ingrese el producto" id="idNombreProducto">
+            </span>
+            <span>
+                <label for="precio">Precio del producto</label>
+                <input type="number" name="precio" placeholder="2000" id="idPrecioProducto">
+            </span>
+            <span>
+                <label>Cantidad del producto</label>
+                <input type="number" placeholder="3" id="idCantidadProducto">
+            </span>
+            <span>
+                <label>Categoría del producto</label>
+                <select name="select" id="producto">
+                    <option value="Carnes">Carnes</option>
+                    <option value="Granos">Granos</option>
+                    <option value="Frutas" selected>Frutas</option>
+                    <option value="Aseo">Aseo</option>
+                </select>
+            </span>
+            <span>
+                <input  type="submit" id="btnAgregarProducto" value="Agregar producto">
+            </span>
+        </form>
+        <section class="section__tableMain">
+            <table id="main__table" border="1">
+                <tr>
+                    <th>Producto agregado</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Categoría</th>
+                    <th>Editar</th>
+                </tr>
+
+            </table>
+        </section>
+
+    </main>
+
+    <footer></footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
